@@ -26,7 +26,7 @@ export default function SearchBoard() {
     <div className="relative max-w-md w-full">
       <input
         type="text"
-        placeholder="Search 2025 titles..."
+        placeholder="Search titles..."
         onChange={(e) => handleSearch(e.target.value)}
         defaultValue={searchParams.get('q') ?? ''}
         className="w-full rounded-full bg-zinc-900 border border-zinc-700 px-5 py-2 text-white outline-none focus:ring-2 focus:ring-purple-500 transition-all"

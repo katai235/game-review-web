@@ -17,6 +17,12 @@ export default async function HomePage(props: {
     .eq('is_goty_2025', true)
     .limit(3);
 
+  const { data: gotyGames } = await supabase
+  .from('games')
+  .select('*')
+  .eq('is_goty_2025', true)
+  .order('critic_score', { ascending: false });
+
   let query = supabase.from('games').select('*');
   if (q) query = query.ilike('title', `%${q}%`);
   const { data: allGames } = await query;

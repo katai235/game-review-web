@@ -2,13 +2,19 @@
 const nextConfig = {
   images: {
     dangerouslyAllowSVG: true,
-    contentDispositionType: 'attachment',
-    contentSecurityPolicy: "default-src 'self'; script-src 'none'; sandbox;",
+
     remotePatterns: [
-      {
-        protocol: 'https',
-        hostname: 'placehold.co',
-      },
+      { protocol: 'https', hostname: 'placehold.co' },
+      { protocol: 'https', hostname: 'images.igdb.com' },
+      { protocol: 'https', hostname: 'www.nintendo-insider.com' },
+      { protocol: 'https', hostname: 'assets-prd.ignimgs.com' },
+      { protocol: 'https', hostname: 'cdn.wccftech.com' },
+      { protocol: 'https', hostname: 'static0.thegamerimages.com' },
+      { protocol: 'https', hostname: 'static0.gamerantimages.com' },
+      { protocol: 'https', hostname: 'assets-prd.ignimgs.com' },
+      { protocol: 'https', hostname: 'www.gametonix.com' },
+      { protocol: 'https', hostname: 'gepig.com' },
+      { protocol: 'https', hostname: 'cdn.thegameawards.com' },
     ],
   },
 };
