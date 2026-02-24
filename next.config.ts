@@ -13,8 +13,10 @@ const nextConfig = {
       { protocol: 'https', hostname: 'static0.gamerantimages.com' },
       { protocol: 'https', hostname: 'assets-prd.ignimgs.com' },
       { protocol: 'https', hostname: 'www.gametonix.com' },
-      { protocol: 'https', hostname: 'gepig.com' },
-      { protocol: 'https', hostname: 'cdn.thegameawards.com' },
+      { protocol: 'https', hostname: 'cdn.akamai.steamstatic.com' },
+      { protocol: 'https', hostname: 'cdn2.unrealengine.com' },
+      { protocol: 'https', hostname: 'shared.akamai.steamstatic.com' },
+      { protocol: 'https', hostname: 'static0.gamerantimages.com' },
     ],
   },
 };
