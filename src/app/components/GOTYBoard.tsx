@@ -35,7 +35,7 @@ export default async function GOTYBoard() {
           const topRegionScore = topRegionRecord ? topRegionRecord.avg_score : 0;
 
           return (
-            /* IMPORTANT: Ensure this is a <div> and not inside a <p> tag */
+            
             <div key={game.id} className="bg-zinc-900 p-6 rounded-2xl border border-zinc-800 flex flex-col justify-between h-full hover:border-yellow-500/40 transition-all">
               <div>
                 {/* AWARDS SECTION */}

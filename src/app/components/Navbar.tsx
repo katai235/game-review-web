@@ -4,7 +4,7 @@ import Link from 'next/link';
 export default async function Navbar() {
   const supabase = await createClient();
 
-  // 1. Fetch the total count of reviews from the review_record table
+  //Fetch the total count of reviews from the review_record table
   const { count, error } = await supabase
     .from('review_record')
     .select('*', { count: 'exact', head: true });
@@ -28,7 +28,7 @@ export default async function Navbar() {
             Top Rated
           </Link>
           
-          {/* UPDATED BUTTON: Now shows the count */}
+          {/* BUTTON: shows the count */}
           <Link 
             href="/submit" 
             className="group flex items-center gap-2 bg-purple-600 hover:bg-purple-700 text-white px-4 py-2 rounded-full font-bold transition-all text-xs shadow-[0_0_15px_-3px_rgba(147,51,234,0.5)]"
